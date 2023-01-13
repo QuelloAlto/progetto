@@ -1,0 +1,17 @@
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: center;
+}
+
+.fCol
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding-bottom: 30px;
+}

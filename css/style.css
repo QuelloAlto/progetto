@@ -1,0 +1,423 @@
+.logo
+{
+    text-align: center;
+}
+
+.logo img{
+    height: 128px;
+}
+
+h1, h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+
+body {
+    background-image: url("../img/wallpaper.jpg");
+    background-size: 550px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+.column img {
+    width: 256px;
+  }
+
+.column img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+.earthA, .moonA, .marsA
+  {
+    position: relative;
+    text-align: center;
+    opacity: 0;
+  }
+
+.earthP, .moonP, .marsP
+{
+    position:relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    font-size: 15px;
+    margin: 2px;
+    opacity: 0;
+}
+
+.earthContainer, .moonContainer, .marsContainer
+{
+    position: absolute;
+}
+
+
+input:focus {
+    background-color: rgb(198, 232, 243);
+}
+
+#emailError, #passwordError
+{
+    color:#ff0000;
+}
+
+
+input{
+    border-radius: 10px;
+    text-align:center;
+}
+
+.inputForm {
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    background: rgba(16, 33, 90, 0.5);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.inputForm p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    font-size: 15px;
+    margin: 2px;
+}
+
+.inputForm label {
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    font-size: 15px;
+}
+
+
+
+
+.im1{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    float : left;
+}
+
+.im2{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    float : right;
+}
+
+
+.home1 {
+    /* top: 300px; */
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    width: 45%;
+    /* opacity: 0 */;
+}
+
+.home1 img {
+    object-fit: cover;
+    /* Non distorce l'immagine */
+    width: 256px;
+    height: 256px;
+    float: left;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.home2 {
+    /*top: 350px; */
+    float: right;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    width: 45%;
+    /* opacity: 0 */;
+}
+
+.home2 img {
+    object-fit: cover;
+    width: 256px;
+    height: 256px;
+    float: right;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.home3 {
+    position: relative;
+    /*top: 350px;*/
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    width: 45%;
+    float: left;
+    /* opacity: 0 */;
+}
+
+.home3 img {
+    object-fit: cover;
+    /* Non distorce l'immagine */
+    width: 256px;
+    height: 256px;
+    float: left;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.home4 {
+    position: relative;
+    /*top: 400px;*/
+    float: right;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    width: 45%;
+    /* opacity: 0 */;
+    float: right;
+}
+
+.home4 img {
+    object-fit: cover;
+    width: 256px;
+    height: 256px;
+    float: right;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.home5 {
+    position: relative;
+    /*top: 450px;*/
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: "Monaco", monospace;
+    width: 45%;
+    /* opacity: 0 */;
+    float: left;
+}
+
+.home5 img {
+    object-fit: cover;
+    /* Non distorce l'immagine */
+    width: 256px;
+    height: 256px;
+    float: left;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+/*Pulsante unisciti*/
+
+.buttonJoin {
+    position: relative;
+    height: 200px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.join {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.join:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.join:active {
+    color: #000
+}
+
+.join:active:after {
+    background: transparent;
+}
+
+.join:hover:before {
+    opacity: 1;
+}
+
+.join:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/* The side navigation menu */
+
+
+.menu
+{
+    position: fixed;
+    float: left;
+    z-index: 1;
+}
+.menu:hover
+{
+    cursor: pointer;
+}
+
+.menu img{
+    width: 25px;
+    height: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a, .sidenav .user {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Monaco", monospace;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .user {
+    font-style: italic;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.success
+{
+    width: 50%;
+    height: 50%;
+    text-align:center;
+    margin: auto;
+    border-style:groove;
+    border-color: #00ff00;
+    color:#00ff00
+}
+.error
+{
+    width: 50%;
+    height: 50%;
+    text-align:center;
+    margin: auto;
+    border-style:groove;
+    border-color: #ff0000;
+    color:#ff0000
+}
