@@ -49,8 +49,6 @@ if(isset($_POST['submit']))
         $mail->Password = "tmlvbucktvddrgpf";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        
-        echo "oo";
 
         $mail->isHTML(true);
 
@@ -71,6 +69,7 @@ if(isset($_POST['submit']))
                 $mail->Body = $_POST['template'];
                 $mail->AltBody = $_POST['template'];
                 $mail->send();
+                $mail->removeAddress($row["email"]);
             
             
         }
